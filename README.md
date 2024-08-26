@@ -37,7 +37,7 @@ Once the virtual environment is activated, the beginning of your terminal prompt
 <br>
 Install the modules by running (in both a Mac and Windows):
 
-`pip install flask flask-sqlalchemy`
+`pip install flask requests flask-sqlalchemy`
 
 You'll see a venv folder has been added to the directory with all of the installed dependencies.
 
