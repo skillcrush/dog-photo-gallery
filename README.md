@@ -57,8 +57,7 @@ The app will run at: http://127.0.0.1:5000/
 
 <br>
 
-To stop the run, click control + C.
-Then hard refresh the page. When making changes to your Python, HTML, or JavaScript code (and not using debugger) you'll need to stop the run after each change.
+To stop the run, click control + C. When making changes to your Python, HTML, or JavaScript code (and not using debugger) you'll need to stop the run after each change. After restarting the server, hard refresh the page.
 
 <br>
 When finished, quit the run by clicking control + C and close the virtual environment by running:
