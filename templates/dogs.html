@@ -1,6 +1,7 @@
-<html>
+<html lang="en">
 
 <head>
+  <title>Dog Image Gallery</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='dogs.css') }}">
   <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap" rel="stylesheet">
@@ -9,7 +10,8 @@
 <body>
   <div class="header">
     <img class="pup-logo"
-      src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2019/09/Asset-1.png" />
+      src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2019/09/Asset-1.png"
+      alt="pup logo" />
     <h1>Dog Image Gallery</h1>
   </div>
   <div class="errors">
@@ -19,7 +21,7 @@
   </div>
   <div class="selectors">
     <form action="/" method="POST" id="dogform">
-      <select class="dog-selector" name="breed">
+      <select class="dog-selector" name="breed" aria-label="Select a dog breed">
         <option value="">Select a dog breed</option>
         <option value="affenpinscher">Affenpinscher</option>
         <option value="african">African</option>
@@ -159,10 +161,10 @@
     </form>
   </div>
   <div class="content">
-    <h3>{{breed}}</h3>
+    <h2>{{breed}}</h2>
     {% for image in images %}
     <div class="dogcontainer">
-      <img src={{image}} class="dogimage" />
+      <img src={{image}} class="dogimage" alt="{{breed}}" />
     </div>
     {% endfor %}
   </div>
